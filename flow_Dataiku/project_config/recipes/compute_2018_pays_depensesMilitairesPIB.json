@@ -11,11 +11,11 @@
     "main": {
       "items": [
         {
-          "ref": "Armees_prepared",
+          "ref": "2018_pays_prepared",
           "deps": []
         },
         {
-          "ref": "WD_pays_label_fr_en",
+          "ref": "DepensesMilitairesPIB",
           "deps": []
         }
       ]
@@ -25,25 +25,25 @@
     "main": {
       "items": [
         {
-          "ref": "Armees_joined",
+          "ref": "2018_pays_depensesMilitairesPIB",
           "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583921342056
+    "lastModifiedOn": 1583930687325
   },
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583921300580
+    "lastModifiedOn": 1583930019917
   },
   "tags": [],
   "customFields": {},

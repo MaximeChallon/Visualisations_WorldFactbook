@@ -59,23 +59,25 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583930871966
+    "lastModifiedOn": 1583930558652
   },
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583929099680
+    "lastModifiedOn": 1583930423976
   },
-  "tags": [],
+  "tags": [
+    "dataset_final"
+  ],
   "params": {
     "connection": "filesystem_managed",
-    "path": "${projectKey}/2018_pays_armees",
+    "path": "${projectKey}/2018_pays_commerce",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
       "mode": "ALL",
@@ -136,7 +138,11 @@
         "type": "double"
       },
       {
-        "name": "Armee_2017",
+        "name": "Exportations_2018",
+        "type": "string"
+      },
+      {
+        "name": "Importations_2018",
         "type": "string"
       }
     ],

@@ -24,6 +24,29 @@
           "type": "EQ"
         }
       ]
+    },
+    {
+      "table2": 2,
+      "table1": 0,
+      "conditionsMode": "AND",
+      "rightLimit": {},
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
+      "on": [
+        {
+          "column1": {
+            "name": "name",
+            "table": 0
+          },
+          "column2": {
+            "name": "Country Name",
+            "table": 2
+          },
+          "maxDistance": 1,
+          "normalizeText": true,
+          "type": "EQ"
+        }
+      ]
     }
   ],
   "selectedColumns": [
@@ -88,9 +111,14 @@
       "table": 0
     },
     {
-      "name": "2017",
+      "name": "2018",
       "type": "string",
       "table": 1
+    },
+    {
+      "name": "2018",
+      "type": "string",
+      "table": 2
     }
   ],
   "engineParams": {
@@ -136,9 +164,13 @@
         "enabled": false
       },
       "autoSelectColumns": false,
-      "prefix": "Armee",
+      "prefix": "Exportations",
       "index": 1,
       "computedColumns": []
+    },
+    {
+      "prefix": "Importations",
+      "index": 2
     }
   ],
   "computedColumns": [],
@@ -196,7 +228,11 @@
             "type": "double"
           },
           {
-            "name": "Armee_2017",
+            "name": "Exportations_2018",
+            "type": "string"
+          },
+          {
+            "name": "Importations_2018",
             "type": "string"
           }
         ],

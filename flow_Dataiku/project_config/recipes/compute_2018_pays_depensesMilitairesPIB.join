@@ -12,11 +12,11 @@
       "on": [
         {
           "column1": {
-            "name": "Country Name",
+            "name": "name",
             "table": 0
           },
           "column2": {
-            "name": "label_fr.value",
+            "name": "Country Name",
             "table": 1
           },
           "maxDistance": 1,
@@ -28,22 +28,67 @@
   ],
   "selectedColumns": [
     {
-      "name": "2003",
+      "name": "area",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "PIB_par_hbt",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "government",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "car_code",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "memberships",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "nombre_appartenances",
       "type": "bigint",
       "table": 0
     },
     {
-      "name": "2010",
+      "name": "population",
       "type": "bigint",
       "table": 0
     },
     {
-      "name": "2017",
+      "name": "religion_principale",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "langue_principale",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "annee_data",
       "type": "bigint",
       "table": 0
     },
     {
-      "name": "label_en.value",
+      "name": "PIB_national",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "2018",
       "type": "string",
       "table": 1
     }
@@ -91,6 +136,7 @@
         "enabled": false
       },
       "autoSelectColumns": false,
+      "prefix": "DepensesMilitairesPIB",
       "index": 1,
       "computedColumns": []
     }
@@ -101,20 +147,56 @@
       "schema": {
         "columns": [
           {
-            "name": "2003",
-            "type": "bigint"
+            "name": "area",
+            "type": "double"
           },
           {
-            "name": "2010",
-            "type": "bigint"
+            "name": "PIB_par_hbt",
+            "type": "double"
           },
           {
-            "name": "2017",
-            "type": "bigint"
+            "name": "government",
+            "type": "string"
           },
           {
             "meaning": "Text",
-            "name": "label_en.value",
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "car_code",
+            "type": "string"
+          },
+          {
+            "name": "memberships",
+            "type": "string"
+          },
+          {
+            "name": "nombre_appartenances",
+            "type": "bigint"
+          },
+          {
+            "name": "population",
+            "type": "bigint"
+          },
+          {
+            "name": "religion_principale",
+            "type": "string"
+          },
+          {
+            "name": "langue_principale",
+            "type": "string"
+          },
+          {
+            "name": "annee_data",
+            "type": "bigint"
+          },
+          {
+            "name": "PIB_national",
+            "type": "double"
+          },
+          {
+            "name": "DepensesMilitairesPIB_2018",
             "type": "string"
           }
         ],

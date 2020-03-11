@@ -15,7 +15,7 @@
           "deps": []
         },
         {
-          "ref": "Armees",
+          "ref": "Morts_guerre",
           "deps": []
         }
       ]
@@ -25,7 +25,7 @@
     "main": {
       "items": [
         {
-          "ref": "2018_pays_armees",
+          "ref": "2018_pays_mortsGuerre",
           "appendMode": false
         }
       ]
@@ -36,14 +36,14 @@
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583930872533
+    "lastModifiedOn": 1583930780320
   },
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583929099733
+    "lastModifiedOn": 1583929573069
   },
   "tags": [],
   "customFields": {},

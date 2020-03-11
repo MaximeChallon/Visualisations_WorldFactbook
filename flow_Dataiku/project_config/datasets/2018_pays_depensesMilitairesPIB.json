@@ -59,23 +59,25 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583921341558
+    "lastModifiedOn": 1583930686889
   },
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583921300555
+    "lastModifiedOn": 1583930019859
   },
-  "tags": [],
+  "tags": [
+    "dataset_final"
+  ],
   "params": {
     "connection": "filesystem_managed",
-    "path": "${projectKey}/Armees_joined",
+    "path": "${projectKey}/2018_pays_depensesMilitairesPIB",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
       "mode": "ALL",
@@ -87,21 +89,57 @@
   "schema": {
     "columns": [
       {
-        "name": "2003",
-        "type": "bigint"
+        "name": "area",
+        "type": "double"
       },
       {
-        "name": "2010",
-        "type": "bigint"
+        "name": "PIB_par_hbt",
+        "type": "double"
       },
       {
-        "name": "2017",
-        "type": "bigint"
+        "name": "government",
+        "type": "string"
       },
       {
-        "name": "label_en.value",
+        "name": "name",
         "type": "string",
         "meaning": "Text"
+      },
+      {
+        "name": "car_code",
+        "type": "string"
+      },
+      {
+        "name": "memberships",
+        "type": "string"
+      },
+      {
+        "name": "nombre_appartenances",
+        "type": "bigint"
+      },
+      {
+        "name": "population",
+        "type": "bigint"
+      },
+      {
+        "name": "religion_principale",
+        "type": "string"
+      },
+      {
+        "name": "langue_principale",
+        "type": "string"
+      },
+      {
+        "name": "annee_data",
+        "type": "bigint"
+      },
+      {
+        "name": "PIB_national",
+        "type": "double"
+      },
+      {
+        "name": "DepensesMilitairesPIB_2018",
+        "type": "string"
       }
     ],
     "userModified": true

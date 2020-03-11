@@ -58,18 +58,18 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583928657022
+    "lastModifiedOn": 1583930370889
   },
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583928640437
+    "lastModifiedOn": 1583930370492
   },
   "tags": [],
   "params": {
@@ -86,13 +86,11 @@
     "columns": [
       {
         "name": "Country Name",
-        "type": "string",
-        "meaning": "Text"
+        "type": "string"
       },
       {
         "name": "Country Code",
-        "type": "string",
-        "meaning": "Text"
+        "type": "string"
       },
       {
         "name": "Indicator Name",

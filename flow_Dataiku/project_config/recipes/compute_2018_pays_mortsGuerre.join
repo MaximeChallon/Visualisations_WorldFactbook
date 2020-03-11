@@ -88,7 +88,7 @@
       "table": 0
     },
     {
-      "name": "2017",
+      "name": "2018",
       "type": "string",
       "table": 1
     }
@@ -136,7 +136,7 @@
         "enabled": false
       },
       "autoSelectColumns": false,
-      "prefix": "Armee",
+      "prefix": "MortsGuerre",
       "index": 1,
       "computedColumns": []
     }
@@ -196,7 +196,7 @@
             "type": "double"
           },
           {
-            "name": "Armee_2017",
+            "name": "MortsGuerre_2018",
             "type": "string"
           }
         ],

@@ -63,19 +63,21 @@
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583930871966
+    "lastModifiedOn": 1583930779861
   },
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583929099680
+    "lastModifiedOn": 1583929573015
   },
-  "tags": [],
+  "tags": [
+    "dataset_final"
+  ],
   "params": {
     "connection": "filesystem_managed",
-    "path": "${projectKey}/2018_pays_armees",
+    "path": "${projectKey}/2018_pays_mortsGuerre",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
       "mode": "ALL",
@@ -136,7 +138,7 @@
         "type": "double"
       },
       {
-        "name": "Armee_2017",
+        "name": "MortsGuerre_2018",
         "type": "string"
       }
     ],

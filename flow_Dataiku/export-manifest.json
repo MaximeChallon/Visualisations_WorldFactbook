@@ -70,7 +70,25 @@
         "name": "2018_pays_armees",
         "type": "Filesystem",
         "usedTransferMethod": "RAW_FILES",
-        "size": 14262
+        "size": 14281
+      },
+      {
+        "name": "2018_pays_commerce",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 16574
+      },
+      {
+        "name": "2018_pays_depensesMilitairesPIB",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 15332
+      },
+      {
+        "name": "2018_pays_mortsGuerre",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 13962
       },
       {
         "name": "2018_pays_prepared",
@@ -88,19 +106,31 @@
         "name": "Armees",
         "type": "UploadedFiles",
         "usedTransferMethod": "UPLOAD",
-        "size": 103300
+        "size": 101268
       },
       {
-        "name": "Armees_joined",
-        "type": "Filesystem",
-        "usedTransferMethod": "RAW_FILES",
-        "size": 2922
+        "name": "DepensesMilitairesPIB",
+        "type": "UploadedFiles",
+        "usedTransferMethod": "UPLOAD",
+        "size": 216139
       },
       {
-        "name": "Armees_prepared",
-        "type": "Filesystem",
-        "usedTransferMethod": "RAW_FILES",
-        "size": 15010
+        "name": "Exportations",
+        "type": "UploadedFiles",
+        "usedTransferMethod": "UPLOAD",
+        "size": 141645
+      },
+      {
+        "name": "Importations",
+        "type": "UploadedFiles",
+        "usedTransferMethod": "UPLOAD",
+        "size": 141734
+      },
+      {
+        "name": "Morts_guerre",
+        "type": "UploadedFiles",
+        "usedTransferMethod": "UPLOAD",
+        "size": 72823
       },
       {
         "name": "WD_organisations",

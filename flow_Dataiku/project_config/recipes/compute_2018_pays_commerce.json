@@ -15,7 +15,11 @@
           "deps": []
         },
         {
-          "ref": "Armees",
+          "ref": "Exportations",
+          "deps": []
+        },
+        {
+          "ref": "Importations",
           "deps": []
         }
       ]
@@ -25,25 +29,25 @@
     "main": {
       "items": [
         {
-          "ref": "2018_pays_armees",
+          "ref": "2018_pays_commerce",
           "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583930872533
+    "lastModifiedOn": 1583930559176
   },
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1583929099733
+    "lastModifiedOn": 1583930424011
   },
   "tags": [],
   "customFields": {},
