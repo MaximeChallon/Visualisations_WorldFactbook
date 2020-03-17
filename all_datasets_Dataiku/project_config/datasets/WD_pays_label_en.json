@@ -1,0 +1,173 @@
+{
+  "type": "HTTP",
+  "managed": false,
+  "formatType": "json",
+  "checklists": {
+    "checklists": []
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "formatParams": {
+    "nestedArraysHandling": "PRESERVE",
+    "extractFromSingleElement": true,
+    "rootPath": "results.bindings",
+    "nestedArraysMaxElements": 100,
+    "nestedArraysMaxContentSize": 300000,
+    "headerRow": false
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1583914017492
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1583914017492
+  },
+  "tags": [],
+  "params": {
+    "sources": [
+      {
+        "url": "https://query.wikidata.org/sparql?query\u003dSELECT%20%3Fpays%20%3Flabel_en%20%0AWHERE%20%7B%0A%3Fpays%20wdt%3AP31%20wd%3AQ3624078%3B%0Ardfs%3Alabel%20%3Flabel_en%0Afilter%28lang%28%3Flabel_en%29%20%3D%20%27en%27%29%0A%7D\u0026format\u003djson"
+      }
+    ],
+    "consider404AsEmpty": true,
+    "fallbackHeadToGet": true,
+    "notReadyIfEmpty": false,
+    "useGlobalProxy": true,
+    "trustAnySSLCertificate": false,
+    "previewPartition": "",
+    "partitions": []
+  },
+  "schema": {
+    "columns": [
+      {
+        "name": "pays.type",
+        "type": "string"
+      },
+      {
+        "name": "pays.value",
+        "type": "string"
+      },
+      {
+        "name": "label_en.xml:lang",
+        "type": "string"
+      },
+      {
+        "name": "label_en.type",
+        "type": "string"
+      },
+      {
+        "name": "label_en.value",
+        "type": "string"
+      }
+    ],
+    "userModified": true
+  },
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "basic:COUNT_FILES",
+        "basic:SIZE",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {}
+}
