@@ -46,7 +46,7 @@
     "exploreUIParams": {
       "autoRefresh": true
     },
-    "globalSearchQuery": "japan",
+    "globalSearchQuery": "",
     "explorationFilters": [],
     "previewMode": "ALL_ROWS"
   },

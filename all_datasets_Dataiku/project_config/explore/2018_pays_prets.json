@@ -10,7 +10,12 @@
       "individualColumns": [],
       "valueColoringMode": "HASH"
     },
-    "sorting": [],
+    "sorting": [
+      {
+        "column": "name",
+        "ascending": true
+      }
+    ],
     "analysisColumnData": {},
     "explorationSampling": {
       "selection": {
@@ -41,7 +46,7 @@
     "exploreUIParams": {
       "autoRefresh": true
     },
-    "globalSearchQuery": "united states",
+    "globalSearchQuery": "",
     "explorationFilters": [],
     "previewMode": "ALL_ROWS"
   },

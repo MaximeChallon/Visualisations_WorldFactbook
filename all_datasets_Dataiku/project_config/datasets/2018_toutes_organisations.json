@@ -73,9 +73,7 @@
     },
     "lastModifiedOn": 1583742126756
   },
-  "tags": [
-    "dataset_final"
-  ],
+  "tags": [],
   "params": {
     "connection": "filesystem_managed",
     "path": "${projectKey}/2018_toutes_organisations",

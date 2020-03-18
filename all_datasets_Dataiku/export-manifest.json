@@ -19,6 +19,42 @@
   "actualContent": {
     "includedDatasets": [
       {
+        "name": "2004_finalise",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 18441
+      },
+      {
+        "name": "2004_organisations_complet",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 18006
+      },
+      {
+        "name": "2004_pays",
+        "type": "UploadedFiles",
+        "usedTransferMethod": "UPLOAD",
+        "size": 6864214
+      },
+      {
+        "name": "2004_pays_prepared",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 17595
+      },
+      {
+        "name": "2004_pays_prepared_joined",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 22446
+      },
+      {
+        "name": "2004_pays_prets",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 22888
+      },
+      {
         "name": "2018_finalise",
         "type": "Filesystem",
         "usedTransferMethod": "RAW_FILES",

@@ -72,9 +72,7 @@
     },
     "lastModifiedOn": 1582634645279
   },
-  "tags": [
-    "dataset_final"
-  ],
+  "tags": [],
   "params": {
     "connection": "filesystem_managed",
     "path": "${projectKey}/2018_pays_prepared",
