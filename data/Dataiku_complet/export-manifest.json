@@ -1,0 +1,305 @@
+{
+  "exportedWithOptions": {
+    "exportUploads": true,
+    "exportManagedFS": false,
+    "exportAnalysisModels": true,
+    "exportSavedModels": true,
+    "exportManagedFolders": false,
+    "exportAllInputDatasets": false,
+    "exportAllDatasets": true,
+    "exportAllInputManagedFolders": false,
+    "exportGitRepository": false,
+    "exportInsightsData": false,
+    "useManualPluginsInfo": false,
+    "includedDatasetsData": [],
+    "includedSavedModels": [],
+    "includedManagedFolders": [],
+    "shareAllInputDatasets": false
+  },
+  "actualContent": {
+    "includedDatasets": [
+      {
+        "name": "2004_finalise",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 18441
+      },
+      {
+        "name": "2004_organisations_complet",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 18006
+      },
+      {
+        "name": "2004_pays",
+        "type": "UploadedFiles",
+        "usedTransferMethod": "UPLOAD",
+        "size": 6864214
+      },
+      {
+        "name": "2004_pays_prepared",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 17595
+      },
+      {
+        "name": "2004_pays_prepared_joined",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 22446
+      },
+      {
+        "name": "2004_pays_prets",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 22888
+      },
+      {
+        "name": "2011_finalise",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 18436
+      },
+      {
+        "name": "2011_organisations_complet",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 17822
+      },
+      {
+        "name": "2011_pays",
+        "type": "UploadedFiles",
+        "usedTransferMethod": "UPLOAD",
+        "size": 12475339
+      },
+      {
+        "name": "2011_pays_prepared",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 20440
+      },
+      {
+        "name": "2011_pays_prepared_joined",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 25121
+      },
+      {
+        "name": "2011_pays_prets",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 25190
+      },
+      {
+        "name": "2018_finalise",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 21792
+      },
+      {
+        "name": "2018_organisations",
+        "type": "UploadedFiles",
+        "usedTransferMethod": "UPLOAD",
+        "size": 1866978
+      },
+      {
+        "name": "2018_organisations_complet",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 21059
+      },
+      {
+        "name": "2018_organisations_groupby_name",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 4599
+      },
+      {
+        "name": "2018_organisations_joinedby_altLabel",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 3779
+      },
+      {
+        "name": "2018_organisations_joinedby_name",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 5939
+      },
+      {
+        "name": "2018_organisations_prepared",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 2889
+      },
+      {
+        "name": "2018_organisations_stack",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 7583
+      },
+      {
+        "name": "2018_organisations_stack_prepared",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 5607
+      },
+      {
+        "name": "2018_pays",
+        "type": "UploadedFiles",
+        "usedTransferMethod": "UPLOAD",
+        "size": 1866978
+      },
+      {
+        "name": "2018_pays_prepared",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 13853
+      },
+      {
+        "name": "2018_pays_prepared_joined",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 18540
+      },
+      {
+        "name": "2018_pays_prets",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 18533
+      },
+      {
+        "name": "2018_toutes_organisations",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 5363
+      },
+      {
+        "name": "Armees",
+        "type": "UploadedFiles",
+        "usedTransferMethod": "UPLOAD",
+        "size": 101268
+      },
+      {
+        "name": "DepensesMilitairesPIB",
+        "type": "UploadedFiles",
+        "usedTransferMethod": "UPLOAD",
+        "size": 216139
+      },
+      {
+        "name": "Exportations",
+        "type": "UploadedFiles",
+        "usedTransferMethod": "UPLOAD",
+        "size": 141645
+      },
+      {
+        "name": "GPS_pays_capitales",
+        "type": "UploadedFiles",
+        "usedTransferMethod": "UPLOAD",
+        "size": 6864214
+      },
+      {
+        "name": "GPS_pays_capitales_prepared",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 0
+      },
+      {
+        "name": "Importations",
+        "type": "UploadedFiles",
+        "usedTransferMethod": "UPLOAD",
+        "size": 141734
+      },
+      {
+        "name": "Morts_guerre",
+        "type": "UploadedFiles",
+        "usedTransferMethod": "UPLOAD",
+        "size": 72823
+      },
+      {
+        "name": "WD_organisations",
+        "type": "HTTP",
+        "usedTransferMethod": "DATA_BUNDLE",
+        "size": 224907
+      },
+      {
+        "name": "WD_organisations_prepared",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 30999
+      },
+      {
+        "name": "WD_pays_altLabel",
+        "type": "HTTP",
+        "usedTransferMethod": "DATA_BUNDLE",
+        "size": 201134
+      },
+      {
+        "name": "WD_pays_altLabel_prepared",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 16120
+      },
+      {
+        "name": "WD_pays_label_en",
+        "type": "HTTP",
+        "usedTransferMethod": "DATA_BUNDLE",
+        "size": 12450
+      },
+      {
+        "name": "WD_pays_label_en_prepared",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 1810
+      },
+      {
+        "name": "WD_pays_label_fr",
+        "type": "HTTP",
+        "usedTransferMethod": "DATA_BUNDLE",
+        "size": 12447
+      },
+      {
+        "name": "WD_pays_label_fr_en",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 2662
+      },
+      {
+        "name": "WD_pays_label_fr_prepared",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 1845
+      }
+    ],
+    "includedSavedModels": [],
+    "includedManagedFolders": [],
+    "allAnalysisData": true,
+    "insightsData": false
+  },
+  "originalProjectKey": "CIA_WORLD_FACTBOOK",
+  "manifestVersion": 3,
+  "generatedWithDSSVersion": "5.1.7",
+  "generatedWithDSSConfVersion": "24",
+  "exportedWithPlugins": [
+    {
+      "pluginId": "local-r-dev-setup",
+      "version": "0.0.1"
+    },
+    {
+      "pluginId": "builtin-macros",
+      "version": "0.0.1"
+    },
+    {
+      "pluginId": "colorbrewer-palettes",
+      "version": "0.0.1"
+    }
+  ],
+  "requiredConnections": {
+    "filesystem_managed": {
+      "name": "filesystem_managed",
+      "type": "Filesystem"
+    }
+  },
+  "usedCodeEnvRefs": [],
+  "hasPartitionedDataset": false
+}

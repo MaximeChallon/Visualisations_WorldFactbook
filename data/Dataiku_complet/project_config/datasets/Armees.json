@@ -1,0 +1,433 @@
+{
+  "type": "UploadedFiles",
+  "managed": false,
+  "formatType": "csv",
+  "checklists": {
+    "checklists": []
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "formatParams": {
+    "style": "excel",
+    "charset": "utf-8",
+    "separator": ",",
+    "quoteChar": "\"",
+    "escapeChar": "\\",
+    "dateSerializationFormat": "ISO",
+    "arrayMapFormat": "json",
+    "hiveSeparators": [
+      "\u0002",
+      "\u0003",
+      "\u0004",
+      "\u0005",
+      "\u0006",
+      "\u0007",
+      "\b"
+    ],
+    "skipRowsBeforeHeader": 4,
+    "parseHeaderRow": true,
+    "skipRowsAfterHeader": 0,
+    "probableNumberOfRecords": 65,
+    "normalizeBooleans": false,
+    "normalizeDoubles": true,
+    "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
+    "readMissingColumnsBehavior": "DISCARD_SILENT",
+    "readDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "writeDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "fileReadFailureBehavior": "FAIL",
+    "compress": ""
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 3,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1583928657022
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1583928640437
+  },
+  "tags": [],
+  "params": {
+    "uploadConnection": "Default (in DSS data dir.)",
+    "notReadyIfEmpty": false,
+    "filesSelectionRules": {
+      "mode": "ALL",
+      "excludeRules": [],
+      "includeRules": [],
+      "explicitFiles": []
+    }
+  },
+  "schema": {
+    "columns": [
+      {
+        "name": "Country Name",
+        "type": "string",
+        "meaning": "Text"
+      },
+      {
+        "name": "Country Code",
+        "type": "string",
+        "meaning": "Text"
+      },
+      {
+        "name": "Indicator Name",
+        "type": "string"
+      },
+      {
+        "name": "Indicator Code",
+        "type": "string"
+      },
+      {
+        "name": "1960",
+        "type": "string"
+      },
+      {
+        "name": "1961",
+        "type": "string"
+      },
+      {
+        "name": "1962",
+        "type": "string"
+      },
+      {
+        "name": "1963",
+        "type": "string"
+      },
+      {
+        "name": "1964",
+        "type": "string"
+      },
+      {
+        "name": "1965",
+        "type": "string"
+      },
+      {
+        "name": "1966",
+        "type": "string"
+      },
+      {
+        "name": "1967",
+        "type": "string"
+      },
+      {
+        "name": "1968",
+        "type": "string"
+      },
+      {
+        "name": "1969",
+        "type": "string"
+      },
+      {
+        "name": "1970",
+        "type": "string"
+      },
+      {
+        "name": "1971",
+        "type": "string"
+      },
+      {
+        "name": "1972",
+        "type": "string"
+      },
+      {
+        "name": "1973",
+        "type": "string"
+      },
+      {
+        "name": "1974",
+        "type": "string"
+      },
+      {
+        "name": "1975",
+        "type": "string"
+      },
+      {
+        "name": "1976",
+        "type": "string"
+      },
+      {
+        "name": "1977",
+        "type": "string"
+      },
+      {
+        "name": "1978",
+        "type": "string"
+      },
+      {
+        "name": "1979",
+        "type": "string"
+      },
+      {
+        "name": "1980",
+        "type": "string"
+      },
+      {
+        "name": "1981",
+        "type": "string"
+      },
+      {
+        "name": "1982",
+        "type": "string"
+      },
+      {
+        "name": "1983",
+        "type": "string"
+      },
+      {
+        "name": "1984",
+        "type": "string"
+      },
+      {
+        "name": "1985",
+        "type": "string"
+      },
+      {
+        "name": "1986",
+        "type": "string"
+      },
+      {
+        "name": "1987",
+        "type": "string"
+      },
+      {
+        "name": "1988",
+        "type": "string"
+      },
+      {
+        "name": "1989",
+        "type": "string"
+      },
+      {
+        "name": "1990",
+        "type": "string"
+      },
+      {
+        "name": "1991",
+        "type": "string"
+      },
+      {
+        "name": "1992",
+        "type": "string"
+      },
+      {
+        "name": "1993",
+        "type": "string"
+      },
+      {
+        "name": "1994",
+        "type": "string"
+      },
+      {
+        "name": "1995",
+        "type": "string"
+      },
+      {
+        "name": "1996",
+        "type": "string"
+      },
+      {
+        "name": "1997",
+        "type": "string"
+      },
+      {
+        "name": "1998",
+        "type": "string"
+      },
+      {
+        "name": "1999",
+        "type": "string"
+      },
+      {
+        "name": "2000",
+        "type": "string"
+      },
+      {
+        "name": "2001",
+        "type": "string"
+      },
+      {
+        "name": "2002",
+        "type": "string"
+      },
+      {
+        "name": "2003",
+        "type": "string"
+      },
+      {
+        "name": "2004",
+        "type": "string"
+      },
+      {
+        "name": "2005",
+        "type": "string"
+      },
+      {
+        "name": "2006",
+        "type": "string"
+      },
+      {
+        "name": "2007",
+        "type": "string"
+      },
+      {
+        "name": "2008",
+        "type": "string"
+      },
+      {
+        "name": "2009",
+        "type": "string"
+      },
+      {
+        "name": "2010",
+        "type": "string"
+      },
+      {
+        "name": "2011",
+        "type": "string"
+      },
+      {
+        "name": "2012",
+        "type": "string"
+      },
+      {
+        "name": "2013",
+        "type": "string"
+      },
+      {
+        "name": "2014",
+        "type": "string"
+      },
+      {
+        "name": "2015",
+        "type": "string"
+      },
+      {
+        "name": "2016",
+        "type": "string"
+      },
+      {
+        "name": "2017",
+        "type": "string"
+      },
+      {
+        "name": "2018",
+        "type": "string"
+      },
+      {
+        "name": "2019",
+        "type": "string"
+      },
+      {
+        "name": "col_64",
+        "type": "string"
+      }
+    ],
+    "userModified": true
+  },
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "basic:COUNT_FILES",
+        "basic:SIZE",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {}
+}

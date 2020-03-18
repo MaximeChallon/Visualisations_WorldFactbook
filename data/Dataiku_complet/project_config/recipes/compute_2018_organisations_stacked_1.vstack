@@ -1,0 +1,105 @@
+{
+  "mode": "UNION",
+  "selectedColumns": [
+    "abbrev",
+    "name",
+    "established",
+    "GPS.value",
+    "longitude",
+    "point_palladio",
+    "latitude",
+    "siegeLabel.value"
+  ],
+  "originColumnName": "original_dataset",
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "virtualInputs": [
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "2018_organisations_joined_by_altLabel",
+      "index": 0
+    },
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "2018_organisations_joined_by_name",
+      "index": 1
+    }
+  ],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "abbrev",
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "established",
+            "type": "string"
+          },
+          {
+            "name": "GPS.value",
+            "type": "string"
+          },
+          {
+            "meaning": "Longitude",
+            "name": "longitude",
+            "type": "double"
+          },
+          {
+            "name": "point_palladio",
+            "type": "string"
+          },
+          {
+            "meaning": "Latitude",
+            "name": "latitude",
+            "type": "double"
+          },
+          {
+            "name": "siegeLabel.value",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    },
+    "distinct": false,
+    "enabled": false
+  },
+  "addOriginColumn": false
+}

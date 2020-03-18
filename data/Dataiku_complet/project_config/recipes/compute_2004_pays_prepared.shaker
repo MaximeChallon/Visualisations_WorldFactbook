@@ -1,0 +1,385 @@
+{
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "explorationSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": 10000,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "maxStoredBytes": 104857600,
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL"
+    },
+    "autoRefreshSample": false
+  },
+  "explorationFilters": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "[",
+            "to": ""
+          },
+          {
+            "from": "]",
+            "to": ""
+          },
+          {
+            "from": "\"",
+            "to": ""
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [],
+        "appliesTo": "ALL",
+        "stopAfterFirstMatch": false,
+        "matching": "SUBSTRING"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": " sq",
+            "to": "000"
+          },
+          {
+            "from": ",",
+            "to": ""
+          },
+          {
+            "from": " km",
+            "to": ""
+          },
+          {
+            "from": "million",
+            "to": "000000"
+          },
+          {
+            "from": "NA000",
+            "to": ""
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "area"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "SUBSTRING"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "\\(.*\\)",
+            "to": ""
+          },
+          {
+            "from": "[^0-9]",
+            "to": ""
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "area"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "PATTERN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "^([^0-9]*) [0-9].*",
+            "to": "$1"
+          },
+          {
+            "from": "^([^,]*),.*",
+            "to": "$1"
+          },
+          {
+            "from": "^([^\\(]*).*",
+            "to": "$1"
+          },
+          {
+            "from": "^[0-9]+% (.*)",
+            "to": "$1"
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "religion"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "PATTERN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "^([^\\(]*).*",
+            "to": "$1"
+          },
+          {
+            "from": "^([^0-9]*).*",
+            "to": "$1"
+          },
+          {
+            "from": " $",
+            "to": ""
+          },
+          {
+            "from": "^([^,]*).*",
+            "to": "$1"
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "language"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "PATTERN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "purchasing power parity - $",
+            "to": ""
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "gdp_total"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "SUBSTRING"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "\\([0-9]{4} est.\\)",
+            "to": ""
+          },
+          {
+            "from": "^([0-9]+) billion",
+            "to": "$1000000000"
+          },
+          {
+            "from": "^([0-9]+) million",
+            "to": "$1000000"
+          },
+          {
+            "from": "^([0-9]+) trillion",
+            "to": "$1000000000000"
+          },
+          {
+            "from": "^([0-9]+).([0-9]{2,2}) billion",
+            "to": "$1$20000000"
+          },
+          {
+            "from": "^([0-9]+).([0-9]{1,1}) billion",
+            "to": "$1$200000000"
+          },
+          {
+            "from": "^([0-9]+).([0-9]{3,3}) billion",
+            "to": "$1$2000000"
+          },
+          {
+            "from": "^([0-9]+).([0-9]{3,3}) trillion",
+            "to": "$1$2000000000"
+          },
+          {
+            "from": "^([0-9]+).([0-9]{2,2}) trillion",
+            "to": "$1$20000000000"
+          },
+          {
+            "from": "^([0-9]+).([0-9]{1,1}) million",
+            "to": "$1$200000"
+          },
+          {
+            "from": "[^0-9]*",
+            "to": ""
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "gdp_total"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "PATTERN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "\\(.*\\)",
+            "to": ""
+          },
+          {
+            "from": " $",
+            "to": ""
+          },
+          {
+            "from": ",",
+            "to": ""
+          },
+          {
+            "from": "[^0-9]*",
+            "to": ""
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "population"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "PATTERN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": ", ",
+            "to": "\\"
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "memberships"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "SUBSTRING"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": " ?\\(.*\\)",
+            "to": ""
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "memberships"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "PATTERN"
+      },
+      "alwaysShowComment": false
+    }
+  ],
+  "maxProcessedMemTableBytes": -1,
+  "previewMode": "ALL_ROWS",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "sorting": [
+    {
+      "column": "gdp_total",
+      "ascending": true
+    }
+  ],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
+  }
+}
