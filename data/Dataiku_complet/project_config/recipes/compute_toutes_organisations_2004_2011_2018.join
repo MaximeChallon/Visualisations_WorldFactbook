@@ -104,6 +104,11 @@
       "table": 0
     },
     {
+      "name": "nombre_pays_membres",
+      "type": "bigint",
+      "table": 0
+    },
+    {
       "name": "population_org",
       "type": "bigint",
       "table": 0
@@ -144,6 +149,11 @@
       "table": 1
     },
     {
+      "name": "nombre_pays_membres",
+      "type": "bigint",
+      "table": 1
+    },
+    {
       "name": "population_org",
       "type": "bigint",
       "table": 1
@@ -181,6 +191,11 @@
     {
       "name": "members",
       "type": "string",
+      "table": 2
+    },
+    {
+      "name": "nombre_pays_membres",
+      "type": "bigint",
       "table": 2
     },
     {
@@ -314,6 +329,10 @@
             "type": "string"
           },
           {
+            "name": "a2004_nombre_pays_membres",
+            "type": "bigint"
+          },
+          {
             "name": "a2004_population_org",
             "type": "bigint"
           },
@@ -346,6 +365,10 @@
             "type": "string"
           },
           {
+            "name": "a2011_nombre_pays_membres",
+            "type": "bigint"
+          },
+          {
             "name": "a2011_population_org",
             "type": "bigint"
           },
@@ -376,6 +399,10 @@
           {
             "name": "a2018_members",
             "type": "string"
+          },
+          {
+            "name": "a2018_nombre_pays_membres",
+            "type": "bigint"
           },
           {
             "name": "a2018_population_org",

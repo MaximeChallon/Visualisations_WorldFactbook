@@ -28,7 +28,7 @@
         "name": "2004_organisations_complet",
         "type": "Filesystem",
         "usedTransferMethod": "RAW_FILES",
-        "size": 18006
+        "size": 18198
       },
       {
         "name": "2004_pays",
@@ -64,7 +64,7 @@
         "name": "2011_organisations_complet",
         "type": "Filesystem",
         "usedTransferMethod": "RAW_FILES",
-        "size": 17822
+        "size": 18039
       },
       {
         "name": "2011_pays",
@@ -106,7 +106,7 @@
         "name": "2018_organisations_complet",
         "type": "Filesystem",
         "usedTransferMethod": "RAW_FILES",
-        "size": 21059
+        "size": 21338
       },
       {
         "name": "2018_organisations_groupby_name",
@@ -274,7 +274,7 @@
         "name": "toutes_organisations_2004_2011_2018",
         "type": "Filesystem",
         "usedTransferMethod": "RAW_FILES",
-        "size": 43682
+        "size": 44344
       }
     ],
     "includedSavedModels": [],

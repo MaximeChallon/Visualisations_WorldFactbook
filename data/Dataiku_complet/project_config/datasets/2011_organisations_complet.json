@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1584528658669
+    "lastModifiedOn": 1584973515182
   },
   "creationTag": {
     "versionNumber": 0,
@@ -121,6 +121,10 @@
       {
         "name": "members",
         "type": "string"
+      },
+      {
+        "name": "nombre_pays_membres",
+        "type": "bigint"
       },
       {
         "name": "population_org",

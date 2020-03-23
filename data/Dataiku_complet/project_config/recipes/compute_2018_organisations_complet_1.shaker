@@ -31,7 +31,7 @@
   },
   "steps": [
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "FindReplace",
@@ -70,6 +70,45 @@
         "appliesTo": "SINGLE_COLUMN",
         "stopAfterFirstMatch": false,
         "matching": "SUBSTRING"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "MatchCounter",
+      "params": {
+        "inCol": "members",
+        "outCol": "nombre_membres",
+        "normalizationMode": "EXACT",
+        "matchingMode": "PATTERN",
+        "pattern": "[^\\\\]+\\\\"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "if(nombre_membres\u003e0, nombre_membres+1, nombre_membres)",
+        "column": "nombre_pays_membres"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "nombre_membres"
+        ],
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
     }

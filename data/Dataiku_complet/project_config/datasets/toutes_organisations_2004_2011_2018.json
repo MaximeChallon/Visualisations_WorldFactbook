@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1584950942188
+    "lastModifiedOn": 1584973725732
   },
   "creationTag": {
     "versionNumber": 0,
@@ -123,6 +123,10 @@
         "type": "string"
       },
       {
+        "name": "a2004_nombre_pays_membres",
+        "type": "bigint"
+      },
+      {
         "name": "a2004_population_org",
         "type": "bigint"
       },
@@ -155,6 +159,10 @@
         "type": "string"
       },
       {
+        "name": "a2011_nombre_pays_membres",
+        "type": "bigint"
+      },
+      {
         "name": "a2011_population_org",
         "type": "bigint"
       },
@@ -185,6 +193,10 @@
       {
         "name": "a2018_members",
         "type": "string"
+      },
+      {
+        "name": "a2018_nombre_pays_membres",
+        "type": "bigint"
       },
       {
         "name": "a2018_population_org",
