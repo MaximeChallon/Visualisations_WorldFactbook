@@ -202,7 +202,7 @@
         "name": "GPS_pays_capitales_prepared",
         "type": "Filesystem",
         "usedTransferMethod": "RAW_FILES",
-        "size": 0
+        "size": 6098
       },
       {
         "name": "Importations",
@@ -220,7 +220,7 @@
         "name": "WD_organisations",
         "type": "HTTP",
         "usedTransferMethod": "DATA_BUNDLE",
-        "size": 224907
+        "size": 224084
       },
       {
         "name": "WD_organisations_prepared",
@@ -269,6 +269,12 @@
         "type": "Filesystem",
         "usedTransferMethod": "RAW_FILES",
         "size": 1845
+      },
+      {
+        "name": "toutes_organisations_2004_2011_2018",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 43682
       }
     ],
     "includedSavedModels": [],
