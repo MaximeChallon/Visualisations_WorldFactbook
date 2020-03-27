@@ -1,0 +1,26 @@
+a,
+a:visited {
+	color: #be122a; /* couleur blanche */
+}
+a:hover,
+a:focus,
+a:active {
+	color: #be122a;
+}
+
+.col-sm-4 ul {
+	list-style-type: none;
+}
+
+.col-sm-4 ul li:before {
+	content:"\2022";
+	margin-right: 10px;
+	color: #be122a;
+	font-size: 25px;
+}
+
+.surtexte  {
+	background-position: center center;
+	padding:10vh;
+	background-image: url('../../../../visualisations/carte_sièges_2018_par_nombre_de_membres.png');
+}

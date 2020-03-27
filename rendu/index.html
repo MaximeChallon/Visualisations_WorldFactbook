@@ -1,0 +1,232 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="utilitaires/static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="utilitaires/static/css/css.css">
+  <title>CIA World Fact Book</title>
+</head>
+<body class="container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top ">
+    <a class="navbar-brand" href="index.html" style="color: #be122a;font-weight:bold;">Visualisations CIAWFB</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+       <li class="nav-item">
+        <a class="nav-link" href="utilitaires/repartition_geographique.html">Répartition géographique</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Domaines</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="utilitaires/economique.html">Economique</a>
+          <a class="dropdown-item" href="utilitaires/militaire.html">Militaire</a>
+          <a class="dropdown-item" href="utilitaires/territorial.html">Territorial</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Représentativité des organisations</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="utilitaires/population.html">Population</a>
+          <a class="dropdown-item" href="utilitaires/membres.html">Nombre de membres</a></div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#liste_abbrev" target="_blank" >Liste des abbréviations</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<div class="row surtexte">
+    <div class="container">
+        <h3 style="color:#be122a;">Visualisations statistiques, cartographiques et graphiques des données du CIA World Fact Book sur les organisations internationales</h3>
+      </div>
+  </div>
+</div>
+
+  <div class="row" style="margin:20px;">
+    <div class="col-sm-12">
+      <balise id="liste_abbrev">
+        <h4 style="color:#be122a;">Liste des abbréviations des organisations internationales</h4>
+        <p>Pour des raisons d'espace disponible sur les graphiques, seuls les noms abbrégés des organisations apparaissent.</p>
+      </balise>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <ul>
+        <li>ABEDA: Arab Bank for Economic Development in Africa</li>
+        <li>ACC: Arab Cooperation Council</li>
+        <li>ACCT: Agency for Cultural and Technical Cooperation</li>
+        <li>ACP: African, Caribbean, and Pacific Countries</li>
+        <li>AfDB: African Development Bank</li>
+        <li>AFESD: Arab Fund for Economic and Social Development</li>
+        <li>AG: Andean Group</li>
+        <li>AL: Arab League</li>
+        <li>AMF: Arab Monetary Fund</li>
+        <li>AMU: Arab Maghreb Union</li>
+        <li>ANC: North Atlantic Cooperation Council</li>
+        <li>ANZUS: Australia-New Zealand-United States Security Treaty</li>
+        <li>APEC: Asia Pacific Economic Cooperation</li>
+        <li>AsDB: Asian Development Bank</li>
+        <li>ASEAN: Association of Southeast Asian Nations</li>
+        <li>BCIE: Central American Bank for Economic Integration</li>
+        <li>BDEAC: Central African States Development Bank</li>
+        <li>Benelux: Benelux Economic Union</li>
+        <li>BIS: Bank for International Settlements</li>
+        <li>BSEC: Black Sea Economic Cooperation Zone</li>
+        <li>C: Commonwealth</li>
+        <li>CACM: Central American Common Market</li>
+        <li>CAEU: Council of Arab Economic Unity</li>
+        <li>Caricom: Caribbean Community and Common Market</li>
+        <li>CBSS: Council of the Baltic Sea States</li>
+        <li>CCC: Customs Cooperation Council</li>
+        <li>CDB: Caribbean Development Bank</li>
+        <li>CE: Council of Europe</li>
+        <li>CEEAC: Economic Community of Central African States</li>
+        <li>CEI: Central European Initiative</li>
+        <li>CEPGL: Economic Community of the Great Lakes Countries</li>
+        <li>CERN: European Organization for Nuclear Research</li>
+        <li>CIS: Commonwealth of Independent States</li>
+        <li>CP: Colombo Plan</li>
+        <li>EADB: East African Development Bank</li>
+        <li>EBRD: European Bank for Reconstruction and Development</li>
+        <li>ECA: Economic Commission for Africa</li>
+        <li>ECE: Economic Commission for Europe</li>
+        <li>ECLAC: Economic Commission for Latin America and the Caribbean</li>
+        <li>ECO: Economic Cooperation Organization</li>
+        <li>ECOWAS: Economic Community of West African States</li>
+        <li>EFTA: European Free Trade Association</li>
+        <li>EIB: European Investment Bank</li>
+        <li>EN: Nuclear Energy Agency</li>
+        <li>Entente: Council of the Entente</li>
+        <li>ESA: European Space Agency</li>
+        <li>ESCAP: Economic and Social Commission for Asia and the Pacific</li>
+        <li>ESCWA: Economic and Social Commission for Western Asia</li>
+        <li>EU: European Union</li>
+        <li>FAO: Food and Agriculture Organization</li>
+        <li>FZ: Franc Zone</li>
+      </ul>
+    </div>
+    <div class="col-sm-4">
+      <ul>
+        <li>G-10: Group of 10</li>
+        <li>G-11: Group of 11</li>
+        <li>G-15: Group of 15</li>
+        <li>G-19: Group of 19</li>
+        <li>G-2: Group of 2</li>
+        <li>G-24: Group of 24</li>
+        <li>G-3: Group of 3</li>
+        <li>G-5: Group of 5</li>
+        <li>G-6: Group of 6</li>
+        <li>G-7: Group of 7</li>
+        <li>G-77: Group of 77</li>
+        <li>G-8: Group of 8</li>
+        <li>G-9: Group of 9</li>
+        <li>GCC: Gulf Cooperation Council</li>
+        <li>IADB: Inter-American Development Bank</li>
+        <li>IAEA: International Atomic Energy Agency</li>
+        <li>IBRD: International Bank for Reconstruction and Development</li>
+        <li>ICAO: International Civil Aviation Organization</li>
+        <li>ICC: International Chamber of Commerce</li>
+        <li>ICFTU: International Confederation of Free Trade Unions</li>
+        <li>ICRM: International Red Cross and Red Crescent Movement</li>
+        <li>IDA: International Development Association</li>
+        <li>IDB: Islamic Development Bank</li>
+        <li>IEA: International Energy Agency</li>
+        <li>IFAD: International Fund for Agricultural Development</li>
+        <li>IFC: International Finance Corporation</li>
+        <li>IFRCS: International Federation of Red Cross and Red Crescent Societies</li>
+        <li>IGADD: Inter-Governmental Authority on Drought and Development</li>
+        <li>ILO: International Labor Organization</li>
+        <li>IMF: International Monetary Fund</li>
+        <li>IMO: International Maritime Organization</li>
+        <li>Inmarsat: International Mobile Satellite Organization</li>
+        <li>Intelsat: International Telecommunications Satellite Organization</li>
+        <li>Interpol: International Criminal Police Organization</li>
+        <li>IOC: International Olympic Committee</li>
+        <li>IOM: International Organization for Migration</li>
+        <li>ISO: International Organization for Standardization</li>
+        <li>ITU: International Telecommunication Union</li>
+        <li>LAES: Latin American Economic System</li>
+        <li>LAIA: Latin American Integration Association</li>
+        <li>Mekong Group: ASEAN-Mekong Basin Development Group</li>
+        <li>Mercosur: Southern Cone Common Market</li>
+        <li>MINURSO: United Nations Mission for the Referendum in Western Sahara</li>
+        <li>MTCR: Missile Technology Control Regime</li>
+        <li>NAM: Nonaligned Movement</li>
+        <li>NATO: North Atlantic Treaty Organization</li>
+        <li>NC: Nordic Council</li>
+        <li>NIB: Nordic Investment Bank</li>
+        <li>NSG: Nuclear Suppliers Group</li>
+        <li>OAPEC: Organization of Arab Petroleum Exporting Countries</li>
+        <li>OAS: Organization of American States</li>
+      </ul>
+    </div>
+    <div class="col-sm-4">
+      <ul>
+        <li>OAU: Organization of African Unity</li>
+        <li>OECD: Organization for Economic Cooperation and Development</li>
+        <li>OECS: Organization of Eastern Caribbean States</li>
+        <li>OIC: Organization of the Islamic Conference</li>
+        <li>OPANAL: Agency for the Prohibition of Nuclear Weapons in Latin America and the Caribbean</li>
+        <li>OPEC: Organization of Petroleum Exporting Countries</li>
+        <li>OSCE: Organization for Security and Cooperation in Europe</li>
+        <li>PCA: Permanent Court of Arbitration</li>
+        <li>PFP: Partnership for Peace</li>
+        <li>RG: Rio Group</li>
+        <li>SAARC: South Asian Association for Regional Cooperation</li>
+        <li>SACU: Southern African Customs Union</li>
+        <li>SADC: Southern African Development Community</li>
+        <li>Sparteca: South Pacific Regional Trade and Economic Cooperation Agreement</li>
+        <li>SPC: South Pacific Commission</li>
+        <li>SPF: South Pacific Forum</li>
+        <li>UDEAC: Central African Customs and Economic Union</li>
+        <li>UN: United Nations</li>
+        <li>UNAMIR: United Nations Assistance Mission for Rwanda</li>
+        <li>UNAVEM III: United Nations Angola Verification Mission</li>
+        <li>UNCRO: United Nations Confidence Restoration Operation in Croatia</li>
+        <li>UNDOF: United Nations Disengagement Observer Force</li>
+        <li>UNESCO: United Nations Educational, Scientific, and Cultural Organization</li>
+        <li>UNFICYP: United Nations Force in Cyprus</li>
+        <li>UNHCR: United Nations Office of the High Commissioner for Refugees</li>
+        <li>UNIDO: United Nations Industrial Development Organization</li>
+        <li>UNIFIL: United Nations Interim Force in Lebanon</li>
+        <li>UNIKOM: United Nations Iraq-Kuwait Observation Mission</li>
+        <li>UNITAR: United Nations Institute for Training and Research</li>
+        <li>UNMIH: United Nations Mission in Haiti</li>
+        <li>UNMOGIP: United Nations Military Observer Group in India and Pakistan</li>
+        <li>UNMOT: United Nations Mission of Observers in Tajikistan</li>
+        <li>UNOMIG: United Nations Observer Mission in Georgia</li>
+        <li>UNOMIL: United Nations Observer Mission in Liberia</li>
+        <li>UNPREDEP: United Nations Preventive Deployment Force</li>
+        <li>UNPROFOR: United Nations Protection Force</li>
+        <li>UNRWA: United Nations Relief and Works Agency for Palestine Refugees in the Near East</li>
+        <li>UNTSO: United Nations Truce Supervision Organization</li>
+        <li>UNU: United Nations University</li>
+        <li>UPU: Universal Postal Union</li>
+        <li>WADB: West African Development Bank</li>
+        <li>WCL: World Confederation of Labor</li>
+        <li>WEU: Western European Union</li>
+        <li>WFTU: World Federation of Trade Unions</li>
+        <li>WHO: World Health Organization</li>
+        <li>WIPO: World Intellectual Property Organization</li>
+        <li>WMO: World Meteorological Organization</li>
+        <li>WToO: World Tourism Organization</li>
+        <li>WTrO: World Trade Organization</li>
+        <li>ZC: Zangger Committee</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="utilitaires/static/js/jquery-3.4.1.slim.min.js"></script>
+  <script src="utilitaires/static/js/popper.min.js"></script>
+  <script src="utilitaires/static/js/bootstrap.min.js"></script></body>
+  <footer class="blog-footer">
+    <div class="container" style="padding: 1em; text-align: center">
+     <p>© <a href="https://www.chartes.psl.eu">Ecole nationale des Chartes</a> --
+      Challon - Robert
+    </p>
+  </div>
+</footer>
+</html>
