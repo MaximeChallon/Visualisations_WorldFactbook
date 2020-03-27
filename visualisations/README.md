@@ -1,13 +1,12 @@
-Voici les visualisations à faire:
+Voici les visualisations faites (la majeure partie d'entre elles a été réalisé à partir de Kibana, plus adapté que Palladio) :
 * Obligatoires
 	* Avec Palladio
 		* une carte indiquant le siège de chaque organisation
-		* un graphe permettant de mettre en lumière les liens entre pays et organisations internationales: comme les graphes RDF, orgs et pays liés entre eux
+		* un graphe permettant de mettre en lumière les liens entre pays et organisations internationales: graphe permettant de voir le nombre de pays par organisation
 		* un graphique permettant de porter une analyse comparative sur ces différentes organisations internationales: représentativité par organisation selon le total des populations des pays membres
-	* Des graphiques: une barre montante par année pour chaque organisation
-		* pour chaque organisation (sur l'axe x), y a une barre par année qui monte pour le PIB total de l'organisation (axe y); les ranger par ordre croissant: C'EST LA PUISSANCE ECONOMIQUE
-		* pour chaque organisation (sur l'axe x), y a une barre par année qui monte pour le nombre de soldats total de l'organisation (axe y); les ranger par ordre croissant: PUISSANCE MILITAIRE
-		* pour chaque organisation (sur l'axe x), y a une barre par année qui monte pour la superficie totale de l'organisation (axe y); les ranger par ordre croissant: PUISSANCE TERRITORIALE
+	* Des graphiques: 
+		* pour la puissance économique: graphiques avec les importations et exportations cumulées pour chaque organisation
+		* pour la puissance militaire: graphiques avec les soldats et militaires morts cumulés pour chaque organisation
+		* pour la puissance territoriale: graphiques avec la superficie cumulée de chaque organisation
 * Optionnelles
-	* graphe sur pays dépensant le plus dans le militaire: toujours effectuer cette comparaison par année avec les barres montantes
-	* carte chaleur montrant les pays ayant le plus de morts entre notre première année et 2018
+	* graphe sur les pays dépensant le plus dans le militaire
