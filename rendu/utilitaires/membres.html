@@ -1,0 +1,93 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/css.css">
+  <title>CIA World Fact Book</title>
+</head>
+<body class="container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top ">
+    <a class="navbar-brand" href="../index.html" style="color: #be122a;font-weight:bold;">Visualisations CIAWFB</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+         <li class="nav-item">
+            <a class="nav-link" href="repartition_geographique.html">Répartition géographique</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Domaines</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="economique.html">Economique</a>
+              <a class="dropdown-item" href="militaire.html">Militaire</a>
+              <a class="dropdown-item" href="territorial.html">Territorial</a>
+          </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Représentativité des organisations</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="population.html">Population</a>
+          <a class="dropdown-item" href="membres.html">Nombre de membres</a></div>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="../index.html#liste_abbrev" target="_blank" >Liste des abbréviations</a>
+      </li>
+  </ul>
+</div>
+</nav>
+
+<div class="row surtexte">
+    <div class="container">
+        <h3 style="color:#be122a;">Membres des organisations</h3>
+    </div>
+</div>
+</div>
+
+<div class="row" style="margin:20px;">
+    <div class="col-sm-12">
+        <h4 style="color:#be122a;">Nombre de membres de chaque organisation en 2004</h4>
+    <figure>
+      <img src="../../visualisations/2004/2004_50_orgs_avec_plus_membres" width="100%" alt="Membres en 2004">
+      <figcaption>Les 50 organisations ayant le plus de membres en 2004</figcaption>
+      <figcaption class="outil">Pour chaque organisation, calcul du nombre de membres</figcaption>
+      <figcaption class="outil">(réalisé avec Kibana)</figcaption>
+  </figure>
+    <figure>
+      <img src="../../visualisations/2004/2004_50_orgs_avec_moins_membres.png" width="100%" alt="Membres en 2004">
+      <figcaption>Les 50 organisations ayant le moins de membres en 2004</figcaption>
+      <figcaption class="outil">Pour chaque organisation, calcul du nombre de membres</figcaption>
+      <figcaption class="outil">(réalisé avec Kibana)</figcaption>
+  </figure>
+</div>
+</div>
+
+<div class="row" style="margin:20px;">
+    <div class="col-sm-12">
+        <h4 style="color:#be122a;">Nombre de membres de chaque organisation en 2018</h4>
+    <figure>
+      <img src="../../visualisations/2018/2018_50_orgs_avec_plus_membres" width="100%" alt="Membres en 2018">
+      <figcaption>Les 50 organisations ayant le plus de membres en 2018</figcaption>
+      <figcaption class="outil">Pour chaque organisation, calcul du nombre de membres</figcaption>
+      <figcaption class="outil">(réalisé avec Kibana)</figcaption>
+  </figure>
+    <figure>
+      <img src="../../visualisations/2018/2018_50_orgs_avec_moins_membres.png" width="100%" alt="Membres en 2018">
+      <figcaption>Les 50 organisations ayant le moins de membres en 2018</figcaption>
+      <figcaption class="outil">Pour chaque organisation, calcul du nombre de membres</figcaption>
+      <figcaption class="outil">(réalisé avec Kibana)</figcaption>
+  </figure>
+</div>
+</div>
+
+<script src="static/js/jquery-3.4.1.slim.min.js"></script>
+<script src="static/js/popper.min.js"></script>
+<script src="static/js/bootstrap.min.js"></script></body>
+<footer class="blog-footer">
+    <div class="container" style="padding: 1em; text-align: center">
+       <p>© <a href="www.chartes.psl.eu">Ecole nationale des Chartes</a> --
+          Challon - Robert
+      </p>
+  </div>
+</footer>
+</html>
