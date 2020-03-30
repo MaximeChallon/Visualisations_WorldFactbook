@@ -1,0 +1,69 @@
+{
+  "type": "join",
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
+  "maxRunningActivities": 0,
+  "inputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "2004_pays_prepared",
+          "deps": []
+        },
+        {
+          "ref": "Importations",
+          "deps": []
+        },
+        {
+          "ref": "Exportations",
+          "deps": []
+        },
+        {
+          "ref": "Armees",
+          "deps": []
+        },
+        {
+          "ref": "DepensesMilitairesPIB",
+          "deps": []
+        },
+        {
+          "ref": "Morts_guerre",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "2004_pays_prepared_joined",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "versionTag": {
+    "versionNumber": 2,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1584515438064
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1584515042863
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

@@ -1,0 +1,405 @@
+{
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "explorationSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": 10000,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "maxStoredBytes": 104857600,
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL"
+    },
+    "autoRefreshSample": false
+  },
+  "explorationFilters": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "[",
+            "to": ""
+          },
+          {
+            "from": "]",
+            "to": ""
+          },
+          {
+            "from": "\"",
+            "to": ""
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "name",
+          "area",
+          "religion",
+          "language",
+          "gdp_total",
+          "government",
+          "population",
+          "capital"
+        ],
+        "appliesTo": "COLUMNS",
+        "stopAfterFirstMatch": false,
+        "matching": "SUBSTRING"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FillEmptyWithValue",
+      "params": {
+        "columns": [
+          "area"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "value": "0"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FillEmptyWithValue",
+      "params": {
+        "columns": [
+          "gdp_total"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "value": "0"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": ",",
+            "to": ""
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "gdp_total"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "SUBSTRING"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FillEmptyWithValue",
+      "params": {
+        "columns": [
+          "population"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "value": "0"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "([^\\(]*)\\([^\\)]*\\)(.?)",
+            "to": "$1$2"
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "capital"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "PATTERN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnValue",
+      "params": {
+        "normalizationMode": "EXACT",
+        "booleanMode": "AND",
+        "columns": [
+          "government"
+        ],
+        "values": [
+          "NA"
+        ],
+        "matchingMode": "FULL_STRING",
+        "action": "CLEAR_CELL",
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "JSONFlattener",
+      "params": {
+        "maxDepth": 2,
+        "inCol": "memberships",
+        "nullAsEmpty": true,
+        "prefixOutputs": true,
+        "flattenArrays": true,
+        "separator": "_"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "memberships_0_note",
+          "memberships_0_political_parties_and_leaders",
+          "memberships_0_judicial_branch",
+          "memberships_0_executive_branch",
+          "memberships_0_flag_description",
+          "memberships_0_national_anthem",
+          "memberships_0_administrative_divisions",
+          "memberships_0_country_name",
+          "memberships_0_political_pressure_groups_and_leaders",
+          "memberships_0_dependent_areas",
+          "memberships_0_government_type",
+          "memberships_0_suffrage",
+          "memberships_0_independence",
+          "memberships_0_national_holidays",
+          "memberships_0_legislative_branch",
+          "memberships_0_legal_system",
+          "memberships",
+          "memberships_0_constitution",
+          "memberships_0_capital",
+          "memberships_0_diplomatic_representation"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "memberships_0_international_organization_participation",
+            "to": "memberships"
+          }
+        ]
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "[",
+            "to": ""
+          },
+          {
+            "from": "]",
+            "to": ""
+          },
+          {
+            "from": "{",
+            "to": ""
+          },
+          {
+            "from": "}",
+            "to": ""
+          },
+          {
+            "from": "\"",
+            "to": ""
+          },
+          {
+            "from": ":",
+            "to": ""
+          },
+          {
+            "from": "organization",
+            "to": ""
+          },
+          {
+            "from": ",",
+            "to": "\\"
+          },
+          {
+            "from": "noteassociate\\",
+            "to": ""
+          },
+          {
+            "from": "notesubbureau\\",
+            "to": ""
+          },
+          {
+            "from": "noteobserver\\",
+            "to": ""
+          },
+          {
+            "from": "notenonregional members\\",
+            "to": ""
+          },
+          {
+            "from": "notenonregional member\\",
+            "to": ""
+          },
+          {
+            "from": "notesubscriber\\",
+            "to": ""
+          },
+          {
+            "from": "notecorrespondent\\",
+            "to": ""
+          },
+          {
+            "from": "notedialogue partner\\",
+            "to": ""
+          },
+          {
+            "from": "none",
+            "to": ""
+          },
+          {
+            "from": "notesuspended\\",
+            "to": ""
+          },
+          {
+            "from": "notedialogue member\\",
+            "to": ""
+          },
+          {
+            "from": "notedialogue members\\",
+            "to": ""
+          },
+          {
+            "from": "noteassociate member\\",
+            "to": ""
+          },
+          {
+            "from": "noteassociate members\\",
+            "to": ""
+          },
+          {
+            "from": "\\\\",
+            "to": "\\"
+          },
+          {
+            "from": "noteregional\\",
+            "to": ""
+          },
+          {
+            "from": "notecandidate country\\",
+            "to": ""
+          },
+          {
+            "from": "notede facto member\\",
+            "to": ""
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "memberships"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "SUBSTRING"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "MatchCounter",
+      "params": {
+        "inCol": "memberships",
+        "outCol": "nombre_appartenances",
+        "normalizationMode": "EXACT",
+        "matchingMode": "PATTERN",
+        "pattern": "\\\\"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "nombre_appartenances + 1",
+        "column": "nombre_appartenances"
+      },
+      "alwaysShowComment": false
+    }
+  ],
+  "maxProcessedMemTableBytes": -1,
+  "previewMode": "ALL_ROWS",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
+  }
+}
